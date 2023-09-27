@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.rtp.bookbus.entity.Admin;
 import com.rtp.bookbus.entity.Booking;
@@ -13,6 +14,7 @@ import com.rtp.bookbus.entity.Bus;
 import com.rtp.bookbus.entity.Operator;
 import com.rtp.bookbus.entity.User;
 
+@Repository
 public class BookBusDaoImpl implements BookBusDao {
 
 	@Autowired
